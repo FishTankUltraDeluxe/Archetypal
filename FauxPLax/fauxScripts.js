@@ -3,7 +3,7 @@
 	var botBarPos = height - 600;
 	var movingBoxVert = height/2-25;
 	var movingBoxHori = width/2-25;
-  var tiltAmp = 380;
+  var tiltAmp = 460;
 
 	// alert(width + ", " + height)
 
@@ -21,6 +21,7 @@ var box 	=   document.querySelector('#movingBox')
 // var maxX =    garden.clientWidth  - ball.clientWidth;
 // var maxY =    garden.clientHeight - ball.clientHeight;
 
+//Handles character motion
 function handleOrientation(event) {
 
   var x = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
@@ -51,4 +52,36 @@ function handleOrientation(event) {
 
 }
 
+//Handles background motion
+function handleOrientationBG(event) {
+
+  var x = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
+  var y = event.gamma; // In degree in the range [-90,90]
+  var imgH = ($("#background").height())
+  var imgV = ($("#background").width())
+
+  var beta     = event.beta;
+  var gamma    = event.gamma;
+
+  // output.innerHTML  = "beta : " + x + "\n";
+  // output.innerHTML += "gamma: " + y + "\n";
+
+  // Because we don't want to have the device upside down
+  // We constrain the x value to the range [-90,90]
+  if (x >  tiltAmp) { x =  tiltAmp};
+  if (x < -tiltAmp) { x = -tiltAmp};
+
+  // To make computation easier we shift the range of 
+  // x and y to [0,tiltAmp]
+  x += tiltAmp;
+  y += tiltAmp;
+
+  // 10 is half the size of the ball
+  // It center the positioning point to the center of the ball
+  backG.style.top  = (height*x/tiltAmp + height) + "px";
+  backG.style.left = (width*y/tiltAmp + width) + "px";
+
+}
+
 window.addEventListener("deviceorientation", handleOrientation, true);
+window.addEventListener("deviceorientation", handleOrientationBG, true);
