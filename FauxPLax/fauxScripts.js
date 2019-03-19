@@ -12,8 +12,8 @@
 
 	$("#bottomStripe").css("top", botBarPos)
 
-	$("#movingBox").css("top", movingBoxVert)
-	$("#movingBox").css("left", movingBoxHori)
+	// $("#movingBox").css("top", movingBoxVert)
+	// $("#movingBox").css("left", movingBoxHori)
 
 var backG =   document.querySelector('#background')
 var box 	=   document.querySelector('#movingBox')
@@ -34,9 +34,6 @@ function handleOrientation(event) {
   var beta     = event.beta;
   var gamma    = event.gamma;
 
-  // output.innerHTML  = "beta : " + x + "\n";
-  // output.innerHTML += "gamma: " + y + "\n";
-
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
   if (x >  tiltAmp) { x =  tiltAmp};
@@ -49,10 +46,10 @@ function handleOrientation(event) {
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (height*x/tiltAmp - imgH-100) + "px";
-  box.style.left = (width*y/tiltAmp - imgV) + "px";
-  backG.style.top  = (height*x/tiltAmp - bV) + "px";
-  backG.style.left = (width*y/tiltAmp - bH) + "px";
+  box.style.top     = (height*x/tiltAmp - imgH-100) + "px";
+  box.style.left    = (width*y/tiltAmp - imgV) + "px";
+  backG.style.top   = (height*x/tiltAmp - bV) + "px";
+  backG.style.left  = (width*y/tiltAmp - bH) + "px";
 
 }
 
