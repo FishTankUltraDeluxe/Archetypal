@@ -1,8 +1,8 @@
 	var width = $(window).width();
 	var height = $(window).height();
 	var botBarPos = height - 600;
-	var movingBoxVert = height/2-25;
-	var movingBoxHori = width/2-25;
+	// var movingBoxVert = height/2-25;
+	// var movingBoxHori = width/2-25;
 
 	// alert(width + ", " + height)
 
@@ -43,8 +43,8 @@ function handleOrientation(event) {
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (height*x/180 - 25) + "px";
-  box.style.left = (width*y/180 - 25) + "px";
+  box.style.top  = (height*x/90 - 25) + "px";
+  box.style.left = (width*y/90 - 25) + "px";
 
 }
 
