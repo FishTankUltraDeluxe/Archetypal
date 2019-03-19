@@ -1,4 +1,4 @@
-	alert("This is version 0.1")
+	alert("This is version 0.2")
 
   var width = $(window).width();
 	var height = $(window).height();
