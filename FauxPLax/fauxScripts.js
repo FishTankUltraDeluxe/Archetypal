@@ -57,8 +57,8 @@ function handleOrientationBG(event) {
 
   var x = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
   var y = event.gamma; // In degree in the range [-90,90]
-  var imgH = ($("#background").height())
-  var imgV = ($("#background").width())
+  var bgH = ($("#background").height())
+  var bgV = ($("#background").width())
 
   var beta     = event.beta;
   var gamma    = event.gamma;
