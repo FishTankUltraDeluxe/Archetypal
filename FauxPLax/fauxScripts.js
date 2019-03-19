@@ -1,4 +1,6 @@
-	var width = $(window).width();
+	alert("This is version 0.1")
+
+  var width = $(window).width();
 	var height = $(window).height();
 	var botBarPos = height - 600;
 	var movingBoxVert = height/2-25;
