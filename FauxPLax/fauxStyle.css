@@ -32,8 +32,8 @@ body {margin:0;}
 /*	background-color:#adfc79;
 	border: 2px solid #629144;*/
 	position: absolute;
-	width:90%;
-	height:80%;
+	width:980px;
+	height:100%;
 	top:0px;
 	left:0px;
 	z-index:600;
