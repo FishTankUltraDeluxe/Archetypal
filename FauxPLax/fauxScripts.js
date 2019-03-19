@@ -8,7 +8,7 @@
 	$("#contentContain").css("maxWidth", width)
 	$("#contentContain").css("maxHeight", height)
 
-	$("#bottomStripe").css("top", botBarPos)
+	// $("#bottomStripe").css("top", botBarPos)
 
 	// $("#movingBox").css("top", movingBoxVert)
 	// $("#movingBox").css("left", movingBoxHori)

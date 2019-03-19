@@ -18,17 +18,23 @@ body {
 	width:100%;
 	font-size:64px;
 	z-index:-200;
-	display:block;
+/*	display:block;*/
+	position:absolute;
+	text-align:center;
+	top:10%;
 }
 
 #tropeDesc{
 	width:100%;
 	font-size:46px;
-	display:block;
+/*	display:block;*/
 	z-index:1500;
 	background:#666;
 	opacity:0.5;
 	padding:15px;
+	position:absolute;
+	top:60%;
+	left:0px;
 }
 
 #contentContain {
