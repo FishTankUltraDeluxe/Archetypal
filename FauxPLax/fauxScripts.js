@@ -3,7 +3,7 @@
 	var botBarPos = height - 600;
 	var movingBoxVert = height/2-25;
 	var movingBoxHori = width/2-25;
-  var tiltAmp = 360;
+  var tiltAmp = 380;
 
 	// alert(width + ", " + height)
 
@@ -46,7 +46,7 @@ function handleOrientation(event) {
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (height*x/tiltAmp - imgH) + "px";
+  box.style.top  = (height*x/tiltAmp - imgH-100) + "px";
   box.style.left = (width*y/tiltAmp - imgV) + "px";
 
 }
