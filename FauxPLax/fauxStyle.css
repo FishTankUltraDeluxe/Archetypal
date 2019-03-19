@@ -17,20 +17,23 @@ body {margin:0;}
 
 #bottomStripe {
 	background-color:#666;
-	width:200%;
-	height:300px;
+	width:350%;
+	height:700px;
 	position:absolute;
 	top:0px;
-	z-index:500;
+	left:-150%;
+	z-index:700;
 	transform:rotate(5deg);
 }
 
 #movingBox {
-	width:50px;
-	height:50px;
-	background-color:#adfc79;
-	border: 2px solid #629144;
+/*	width:50px;
+	height:50px;*/
+/*	background-color:#adfc79;
+	border: 2px solid #629144;*/
 	position: absolute;
+	width:90%;
+	height:80%;
 	top:0px;
 	left:0px;
 	z-index:600;
