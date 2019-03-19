@@ -3,6 +3,7 @@
 	var botBarPos = height - 600;
 	var movingBoxVert = height/2-25;
 	var movingBoxHori = width/2-25;
+  var tiltAmp = 360;
 
 	// alert(width + ", " + height)
 
@@ -22,7 +23,7 @@ var box 	=   document.querySelector('#movingBox')
 
 function handleOrientation(event) {
 
-  var x = event.beta;  // In degree in the range [-270,270]
+  var x = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
   var y = event.gamma; // In degree in the range [-90,90]
   var imgH = ($("#movingBox").height())
   var imgV = ($("#movingBox").width())
@@ -35,18 +36,18 @@ function handleOrientation(event) {
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
-  if (x >  270) { x =  270};
-  if (x < -270) { x = -270};
+  if (x >  tiltAmp) { x =  tiltAmp};
+  if (x < -tiltAmp) { x = -tiltAmp};
 
   // To make computation easier we shift the range of 
-  // x and y to [0,270]
-  x += 270;
-  y += 270;
+  // x and y to [0,tiltAmp]
+  x += tiltAmp;
+  y += tiltAmp;
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (height*x/270 - imgH) + "px";
-  box.style.left = (width*y/270 - imgV) + "px";
+  box.style.top  = (height*x/tiltAmp - imgH) + "px";
+  box.style.left = (width*y/tiltAmp - imgV) + "px";
 
 }
 
