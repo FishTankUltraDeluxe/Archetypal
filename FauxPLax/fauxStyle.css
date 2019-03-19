@@ -14,6 +14,23 @@ body {
 	left:0;
 }
 
+#tropeHeader {
+	width:100%;
+	font-size:64px;
+	z-index:-200;
+	display:block;
+}
+
+#tropeDesc{
+	width:100%;
+	font-size:46px;
+	display:block;
+	z-index:1500;
+	background:#666;
+	opacity:0.5;
+	padding:15px;
+}
+
 #contentContain {
 	margin:0;
 	max-height:1920px;
