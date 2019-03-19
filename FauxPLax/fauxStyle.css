@@ -18,8 +18,8 @@ body {
 	z-index:-100;
 	background-color:#21ba8f;
 	overflow:hidden;
-	position:absolute;
-	top:0px;
+/*	position:relative;
+*/	top:0px;
 	left:0px;
 }
 
