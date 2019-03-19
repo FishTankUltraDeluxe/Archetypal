@@ -4,7 +4,7 @@
 	var movingBoxVert = height/2-25;
 	var movingBoxHori = width/2-25;
 
-	// alert(width + ", " + height)
+	// console.log(width + ", " + height)
 
 	$("#contentContain").css("maxWidth", width)
 	$("#contentContain").css("maxHeight", height)
@@ -43,9 +43,12 @@ function handleOrientation(event) {
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (width/2 - 25) + "px";
-  box.style.left = (height/2 - 25) + "px";
-
+ 
+  // console.log("Screen height is: " + height)
+  // console.log("Box left position is: " + $("#movingBox").css("left"));
+  box.style.top  = (height/2 - 25) + "px";
+  box.style.left = (width/2 - 25) + "px";
+  // console.log("New box position is: " + (height/2-25));
 }
 
 window.addEventListener("deviceorientation", handleOrientation, true);
