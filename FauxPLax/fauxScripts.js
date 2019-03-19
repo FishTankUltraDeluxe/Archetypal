@@ -4,7 +4,7 @@
 	var movingBoxVert = height/2-25;
 	var movingBoxHori = width/2-25;
 
-	// console.log(width + ", " + height)
+	// alert(width + ", " + height)
 
 	$("#contentContain").css("maxWidth", width)
 	$("#contentContain").css("maxHeight", height)
@@ -33,22 +33,19 @@ function handleOrientation(event) {
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
-  if (x >  45) { x =  45};
-  if (x < -45) { x = -45};
+  if (x >  15) { x =  15};
+  if (x < -15) { x = -15};
 
   // To make computation easier we shift the range of 
   // x and y to [0,180]
-  x += 45;
-  y += 45;
+  x += 15;
+  y += 15;
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
- 
-  // console.log("Screen height is: " + height)
-  // console.log("Box left position is: " + $("#movingBox").css("left"));
-  box.style.top  = (height/2 - 25) + "px";
-  box.style.left = (width/2 - 25) + "px";
-  // console.log("New box position is: " + (height/2-25));
+  box.style.top  = (height*x/height - 25) + "px";
+  box.style.left = (width*y/width - 25) + "px";
+
 }
 
 window.addEventListener("deviceorientation", handleOrientation, true);

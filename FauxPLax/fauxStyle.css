@@ -16,7 +16,7 @@ body {margin:0;}
 #background img {mix-blend-mode: multiply;}
 
 #bottomStripe {
-	background-color:#2fbe8f;
+	background-color:#666;
 	width:200%;
 	height:300px;
 	position:absolute;
