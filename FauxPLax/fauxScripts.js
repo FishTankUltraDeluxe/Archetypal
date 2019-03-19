@@ -78,8 +78,8 @@ function handleOrientationBG(event) {
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  backG.style.top  = (height*x/tiltAmp + height) + "px";
-  backG.style.left = (width*y/tiltAmp + width) + "px";
+  backG.style.top  = (height*x/tiltAmp + imgH) + "px";
+  backG.style.left = (width*y/tiltAmp + imgV) + "px";
 
 }
 
