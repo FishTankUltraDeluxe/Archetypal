@@ -1,5 +1,3 @@
-	alert("This is version 0.2")
-
   var width = $(window).width();
 	var height = $(window).height();
 	var botBarPos = height - 600;
