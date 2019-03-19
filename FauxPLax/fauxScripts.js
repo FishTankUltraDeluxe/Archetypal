@@ -11,8 +11,8 @@
 
 	$("#bottomStripe").css("top", botBarPos)
 
-	$("#movingBox").css("top", movingBoxVert)
-	$("#movingBox").css("left", movingBoxHori)
+	// $("#movingBox").css("top", movingBoxVert)
+	// $("#movingBox").css("left", movingBoxHori)
 
 var backG =   document.querySelector('#background')
 var box 	=   document.querySelector('#movingBox')
@@ -43,8 +43,8 @@ function handleOrientation(event) {
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (height*x/90 - 25) + "px";
-  box.style.left = (width*y/90 - 25) + "px";
+  box.style.top  = (height*x/1080 - 25) + "px";
+  box.style.left = (width*y/1080 - 25) + "px";
 
 }
 
