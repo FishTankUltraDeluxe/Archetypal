@@ -24,10 +24,12 @@ var box 	=   document.querySelector('#movingBox')
 //Handles character motion
 function handleOrientation(event) {
 
-  var x = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
-  var y = event.gamma; // In degree in the range [-90,90]
-  var imgH = ($("#movingBox").height())
-  var imgV = ($("#movingBox").width())
+  var x     = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
+  var y     = event.gamma; // In degree in the range [-90,90]
+  var imgH  = ($("#movingBox").height());
+  var imgV  = ($("#movingBox").width());
+  var bV    = ($("body").height());
+  var bH    = ($("body").width())
 
   var beta     = event.beta;
   var gamma    = event.gamma;
@@ -49,8 +51,8 @@ function handleOrientation(event) {
   // It center the positioning point to the center of the ball
   box.style.top  = (height*x/tiltAmp - imgH-100) + "px";
   box.style.left = (width*y/tiltAmp - imgV) + "px";
-  backG.style.top  = (height*x/tiltAmp + imgH) + "px";
-  backG.style.left = (width*y/tiltAmp + imgV) + "px";
+  backG.style.top  = (height*x/tiltAmp - bV) + "px";
+  backG.style.left = (width*y/tiltAmp - bH) + "px";
 
 }
 
