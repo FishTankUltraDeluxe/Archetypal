@@ -8,16 +8,21 @@ body {margin:0;}
 }
 
 #background {
-	opacity: 0.5;
 	min-height:100vh;
+	z-index:-100;
+	background-color:#21ba8f;
 }
+
+#background img {mix-blend-mode: multiply;}
 
 #bottomStripe {
 	background-color:green;
-	width:100%;
+	width:200%;
 	height:300px;
 	position:absolute;
 	top:0px;
+	z-index:500;
+	transform:rotate(5deg);
 }
 
 #movingBox {
@@ -28,4 +33,5 @@ body {margin:0;}
 	position: absolute;
 	top:0px;
 	left:0px;
+	z-index:600;
 }
