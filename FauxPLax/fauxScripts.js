@@ -22,7 +22,7 @@ var box 	=   document.querySelector('#movingBox')
 
 function handleOrientation(event) {
 
-  var x = event.beta;  // In degree in the range [-180,180]
+  var x = event.beta;  // In degree in the range [-270,270]
   var y = event.gamma; // In degree in the range [-90,90]
   var imgH = ($("#movingBox").height())
   var imgV = ($("#movingBox").width())
@@ -35,18 +35,18 @@ function handleOrientation(event) {
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
-  if (x >  180) { x =  180};
-  if (x < -180) { x = -180};
+  if (x >  270) { x =  270};
+  if (x < -270) { x = -270};
 
   // To make computation easier we shift the range of 
-  // x and y to [0,180]
-  x += 180;
-  y += 180;
+  // x and y to [0,270]
+  x += 270;
+  y += 270;
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  box.style.top  = (height*x/180 - imgH) + "px";
-  box.style.left = (width*y/180 - imgV) + "px";
+  box.style.top  = (height*x/270 - imgH) + "px";
+  box.style.left = (width*y/270 - imgV) + "px";
 
 }
 
