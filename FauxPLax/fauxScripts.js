@@ -49,39 +49,9 @@ function handleOrientation(event) {
   // It center the positioning point to the center of the ball
   box.style.top  = (height*x/tiltAmp - imgH-100) + "px";
   box.style.left = (width*y/tiltAmp - imgV) + "px";
-
-}
-
-//Handles background motion
-function handleOrientationBG(event) {
-
-  var x = event.beta;  // In degree in the range [-tiltAmp,tiltAmp]
-  var y = event.gamma; // In degree in the range [-90,90]
-  var bgH = ($("#background").height())
-  var bgV = ($("#background").width())
-
-  var beta     = event.beta;
-  var gamma    = event.gamma;
-
-  // output.innerHTML  = "beta : " + x + "\n";
-  // output.innerHTML += "gamma: " + y + "\n";
-
-  // Because we don't want to have the device upside down
-  // We constrain the x value to the range [-90,90]
-  if (x >  tiltAmp) { x =  tiltAmp};
-  if (x < -tiltAmp) { x = -tiltAmp};
-
-  // To make computation easier we shift the range of 
-  // x and y to [0,tiltAmp]
-  x += tiltAmp;
-  y += tiltAmp;
-
-  // 10 is half the size of the ball
-  // It center the positioning point to the center of the ball
   backG.style.top  = (height*x/tiltAmp + imgH) + "px";
   backG.style.left = (width*y/tiltAmp + imgV) + "px";
 
 }
 
 window.addEventListener("deviceorientation", handleOrientation, true);
-window.addEventListener("deviceorientation", handleOrientationBG, true);
