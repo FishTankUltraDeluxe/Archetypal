@@ -5,6 +5,15 @@ body {
 	overflow:hidden;
 }
 
+#vNum {
+	color:#fff;
+	font-size:50px;
+	z-index:1000;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
 #contentContain {
 	margin:0;
 	max-height:1920px;
