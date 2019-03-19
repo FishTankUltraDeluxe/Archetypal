@@ -33,13 +33,13 @@ function handleOrientation(event) {
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
-  if (x >  15) { x =  15};
-  if (x < -15) { x = -15};
+  if (x >  45) { x =  45};
+  if (x < -45) { x = -45};
 
   // To make computation easier we shift the range of 
   // x and y to [0,180]
-  x += 15;
-  y += 15;
+  x += 45;
+  y += 45;
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
