@@ -21,8 +21,9 @@ var parallaxInstance = new Parallax(scene);
   console.log("Text box is offset by: " + boxOffset);
 
   $(window).on("swiperight", function(){
-    alert("You've swiped right!")
-  })
+    $("#bodyContain").css("background", "#000000")
+  });
+
   // var tiltAmp = 460;
 
 
