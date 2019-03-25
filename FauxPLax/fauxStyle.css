@@ -31,10 +31,10 @@ body {
 
 #character {
 	position: absolute;
-	width:100%;
+	width:80%;
 	height:auto;
 	top:0px;
-/*	left:0px;*/
+	left:0px;
 	z-index:400;
 	overflow:hidden;
 }
