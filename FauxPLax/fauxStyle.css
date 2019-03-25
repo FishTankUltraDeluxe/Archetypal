@@ -51,11 +51,14 @@ body {
 #tropeHeader {
 	font-size:100px;
 	color:#fff;
+	filter:drop-shadow(0 5px 5px #000);
 }
 
 #tropeDesc {
 	font-size:60px;
+	font-weight:500;
 	color:#fff;
+	filter:drop-shadow(0 5px 5px #000);
 }
 
 /*#background {

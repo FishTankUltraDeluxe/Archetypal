@@ -12,13 +12,13 @@ var parallaxInstance = new Parallax(scene);
   var boxOffset       = windowHeight - textBoxHeight;
   
 // Force container to bottom and adopt width of screen
-  $("#textContainer").css("marginTop", boxOffset);
-  $("#textContainer").css("maxWidth", windowWidth)
+  $("#textContainer").css("marginTop", boxOffset*1.25);
+  $("#textContainer").css("maxWidth", windowWidth);
   
-  console.log("Width of window: " + windowWidth)
-  console.log("Height of window: " + windowHeight)
-  console.log("Text box height: " + textBoxHeight)
-  console.log("Text box is offset by: " + boxOffset)
+  console.log("Width of window: " + windowWidth);
+  console.log("Height of window: " + windowHeight);
+  console.log("Text box height: " + textBoxHeight);
+  console.log("Text box is offset by: " + boxOffset);
 
   // var tiltAmp = 460;
 
