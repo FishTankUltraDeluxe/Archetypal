@@ -7,7 +7,7 @@ body {
 	margin:0;
 	max-height:1920px;
 	max-width:1080px;
-	overflow:hidden;
+/*	overflow:hidden;*/
 	font-family:"Maven Pro";
 /*	background-color:#21ba8f !important;*/
 	touch-action: none;
@@ -61,8 +61,4 @@ body {
 	font-weight:500;
 	color:#fff;
 	filter:drop-shadow(0 5px 5px #000);
-}
-
-.sortable-handler {
-  touch-action: none;
 }
