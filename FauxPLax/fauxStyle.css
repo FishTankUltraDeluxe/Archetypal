@@ -1,52 +1,62 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+
 body {
 	margin:0;
 	max-height:1920px;
 	max-width:1080px;
 	overflow:hidden;
+	font-family:"Maven Pro";
 }
 
 #vNum {
-	color:#fff;
-	font-size:50px;
-	z-index:1000;
-	position:fixed;
-	top:0;
-	left:0;
+    color: #000;
+    font-weight: 700;
+    font-size: 50px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    margin: 0;
 }
 
-#tropeHeader {
-	width:100%;
-	font-size:64px;
-	z-index:-200;
-/*	display:block;*/
-	position:relative;
-	text-align:center;
-	top:10px;
-}
-
-#tropeDesc{
-	width:100%;
-/*	display:block;*/
-	z-index:1500;
-	background:#666666a6;
-/*	opacity:0.5;*/
-	padding:15px;
-	position:relative;
-	top:60%;
-	left:0px;
-}
-
-#tropeDescText{
-	font-size:46px;	
-	color:#fff;
-}
-
-#contentContain {
+#bodyContain {
 	margin:0;
 	max-height:1920px;
 	max-width:1080px;
 	overflow:hidden;
 	position:fixed;
+}
+
+#character {
+	position: absolute;
+	width:980px;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:400;
+	overflow:hidden;
+}
+
+#textContainer {
+    position: fixed;
+    z-index: 5000;
+    background: #fff;
+    max-width: 100%;
+    bottom: 0;
+    padding: 60px;
+    background:#000000c7;
+}
+
+#tropeHeader {
+	font-size:100px;
+	color:#fff;
+}
+
+#tropeDesc {
+	font-size:60px;
+	color:#fff;
 }
 
 #background {
@@ -54,38 +64,11 @@ body {
 	z-index:-100;
 	background-color:#21ba8f;
 	overflow:hidden;
-/*	position:relative;
-*/	top:0px;
+	top:0px;
 	left:0px;
 }
 
 #background img {
 	mix-blend-mode: multiply;
-	overflow:hidden;
-}
-
-#bottomStripe {
-	background-color:#666;
-	width:350%;
-	height:700px;
-	position:absolute;
-	top:0px;
-	left:-150%;
-	z-index:700;
-	transform:rotate(5deg);
-	overflow:hidden;
-}
-
-#movingBox {
-/*	width:50px;
-	height:50px;*/
-/*	background-color:#adfc79;
-	border: 2px solid #629144;*/
-	position: absolute;
-	width:980px;
-	height:100%;
-	top:0px;
-	left:0px;
-	z-index:400;
 	overflow:hidden;
 }
