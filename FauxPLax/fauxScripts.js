@@ -1,43 +1,48 @@
-  var width = $(window).width();
-	var height = $(window).height();
-  var tiltAmp = 460;
+var scene = $('#parallaxContain').get(0);
+var parallaxInstance = new Parallax(scene);
 
-	$("#contentContain").css("maxWidth", width)
-	$("#contentContain").css("maxHeight", height)
-  console.log("Width of window: " + width)
-  console.log("Height of window: " + height)
+//Attempt 1, commented for storage in case new solution does not work
 
-var backG =   document.querySelector('#bgImage')
-var box 	=   document.querySelector('#character')
+ //  var width = $(window).width();
+  // var height = $(window).height();
+ //  var tiltAmp = 460;
 
-//Handles character motion
-function handleOrientation(event) {
+  // $("#contentContain").css("maxWidth", width)
+  // $("#contentContain").css("maxHeight", height)
+ //  console.log("Width of window: " + width)
+ //  console.log("Height of window: " + height)
 
-  var x     = event.beta;
-  var y     = event.gamma;
+// var backG =   document.querySelector('#bgImage')
+// var box 	=   document.querySelector('#character')
 
-  var imgH  = ($("#character").height());
-  var imgV  = ($("#character").width());
-  var bV    = ($("body").height());
-  var bH    = ($("body").width())
+// //Handles character motion
+// function handleOrientation(event) {
 
-  var beta     = event.beta;
-  var gamma    = event.gamma;
+//   var x     = event.beta;
+//   var y     = event.gamma;
 
-  // Rotation constraints
-  if (x >  tiltAmp) { x =  tiltAmp};
-  if (x < -tiltAmp) { x = -tiltAmp};
+//   var imgH  = ($("#character").height());
+//   var imgV  = ($("#character").width());
+//   var bV    = ($("body").height());
+//   var bH    = ($("body").width())
 
-  // Range computation
-  x += tiltAmp;
-  y += tiltAmp;
+//   var beta     = event.beta;
+//   var gamma    = event.gamma;
 
-  // Centering
-  box.style.top     = (height*x/tiltAmp - imgH) + "px";
-  box.style.left    = (width*y/tiltAmp - imgV) + "px";
-  backG.style.top   = (height*x/(tiltAmp*100) - bV) + "px";
-  backG.style.left  = (width*y/(tiltAmp*100) - bH) + "px";
+//   // Rotation constraints
+//   if (x >  tiltAmp) { x =  tiltAmp};
+//   if (x < -tiltAmp) { x = -tiltAmp};
 
-}
+//   // Range computation
+//   x += tiltAmp;
+//   y += tiltAmp;
 
-window.addEventListener("deviceorientation", handleOrientation, true);
+//   // Centering
+//   box.style.top     = (height*x/tiltAmp - imgH) + "px";
+//   box.style.left    = (width*y/tiltAmp - imgV) + "px";
+//   backG.style.top   = (height*x/(tiltAmp*100) - bV) + "px";
+//   backG.style.left  = (width*y/(tiltAmp*100) - bH) + "px";
+
+// }
+
+// window.addEventListener("deviceorientation", handleOrientation, true);

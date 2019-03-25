@@ -12,41 +12,54 @@
 	<body>
 
 		<!-- Version Number - Update this each push -->
-		<p id="vNum">Version 0.32.7</p>
+		<p id="vNum">Version 0.33.0</p>
 
 		<!-- Main container for all content -->
 		<div id="bodyContain">
+			<div id="parallaxContain">
+				<!-- Character -->
+				<img src="Mythra.png" id="character">
 
-			<!-- Character -->
-			<img src="Mythra.png" id="character">
+				<!-- Container for all text elements -->
+				<div id="textContainer">
 
-			<!-- Container for all text elements -->
-			<div id="textContainer">
+					<!-- Trope Name -->
+					<h1 id="tropeHeader">
+						Sex Object
+					</h1>
 
-				<!-- Trope Name -->
-				<h1 id="tropeHeader">
-					Sex Object
-				</h1>
+					<!-- Trope Description -->
+					<p id="tropeDesc">
+						A character who is designed to be as sexualized as possible for no immediately apparent reason.
+					</p>
+					
+				</div>
 
-				<!-- Trope Description -->
-				<p id="tropeDesc">
-					A character who is designed to be as sexualized as possible for no immediately apparent reason.
-				</p>
-				
+				<!-- Background -->
+				<!-- <div id="background">
+					<img src="bigTile.jpg" id="bgImage">
+				</div> -->
 			</div>
-
-			<!-- Background -->
-			<div id="background">
-				<img src="bigTile.jpg" id="bgImage">
-			</div>
-
 		</div>
 
 		<!-- Jquery Libraries -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="gyroNorm/dist/gyronorm.complete.min.js"></script>
+			
+			<!-- Main Jquery Library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-		<!-- Jquery Script Path -->
+			<!-- Parallax Libraries -->
+			<!-- <script src="FauxPLax/parallax.min.js"></script> -->
+
+
+
+			<script src="FauxPLax/parallax.min.js"></script>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+			<!-- Gyro Library -->
+			<!-- <script src="gyroNorm/dist/gyronorm.complete.min.js"></script> -->
+
+		<!-- Jquery File Path -->
 	    <script src="FauxPLax/fauxScripts.js"></script>
 
 	</body>
