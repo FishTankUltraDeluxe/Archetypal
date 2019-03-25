@@ -1,6 +1,8 @@
 /*Font Import*/
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
 
+h1, p {margin-top:0;}
+
 body {
 	margin:0;
 	max-height:1920px;
@@ -36,20 +38,14 @@ body {
 	height:80%;
 	top:0px;
 	left:0px;
-/*	position: absolute;*/
-/*	z-index:400;*/
 	overflow:hidden;
 }
 
 #textContainer {
-/*    position: fixed;*/
-/*    z-index: 5000;*/
     background: #fff;
-    width: 100%;
-    bottom: 0;
+    max-width: 100px;
     padding: 60px;
     background:#000000c7;
-
 }
 
 #tropeHeader {

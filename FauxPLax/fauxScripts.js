@@ -5,14 +5,26 @@ var parallaxInstance = new Parallax(scene);
 
 //Attempt 1, commented for storage in case new solution does not work
 
- //  var width = $(window).width();
-  // var height = $(window).height();
- //  var tiltAmp = 460;
+// Get width and height of device window, and height of text container
+  var windowWidth     = $(window).width();
+  var windowHeight    = $(window).height();
+  var textBoxHeight   = $("#textContainer").height();
+  var boxOffset       = windowHeight - textBoxHeight;
+  
+// Force container to bottom and adopt width of screen
+  $("#textContainer").css("marginTop", boxOffset);
+  $("#textContainer").css("maxWidth", windowWidth)
+  
+  console.log("Width of window: " + windowWidth)
+  console.log("Height of window: " + windowHeight)
+  console.log("Text box height: " + textBoxHeight)
+  console.log("Text box is offset by: " + boxOffset)
 
-  // $("#contentContain").css("maxWidth", width)
-  // $("#contentContain").css("maxHeight", height)
- //  console.log("Width of window: " + width)
- //  console.log("Height of window: " + height)
+  // var tiltAmp = 460;
+
+
+  // $("#textContainer").css("maxHeight", height)
+
 
 // var backG =   document.querySelector('#bgImage')
 // var box 	=   document.querySelector('#character')
