@@ -1,10 +1,11 @@
   var width = $(window).width();
 	var height = $(window).height();
-	var botBarPos = height - 600;
   var tiltAmp = 460;
 
 	$("#contentContain").css("maxWidth", width)
 	$("#contentContain").css("maxHeight", height)
+  console.log("Width of window: " + width)
+  console.log("Height of window: " + height)
 
 var backG =   document.querySelector('#bgImage')
 var box 	=   document.querySelector('#character')
@@ -32,8 +33,8 @@ function handleOrientation(event) {
   y += tiltAmp;
 
   // Centering
-  box.style.top     = (height*x/tiltAmp - imgH-100) + "px";
-  box.style.left    = (width*y/tiltAmp - imgV) + "px";
+  box.style.top     = (height*x/tiltAmp - imgH) + "px";
+  box.style.left    = (width*y/tiltAmp - imgV+50) + "px";
   backG.style.top   = (height*x/(tiltAmp*5) - bV) + "px";
   backG.style.left  = (width*y/(tiltAmp*5) - bH) + "px";
 
