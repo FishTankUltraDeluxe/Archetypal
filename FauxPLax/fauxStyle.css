@@ -9,7 +9,7 @@ body {
 	max-width:1080px;
 	overflow:hidden;
 	font-family:"Maven Pro";
-	background-color:#21ba8f;
+	background-color:#21ba8f !important;
 }
 
 #vNum {
@@ -30,6 +30,7 @@ body {
 	max-width:1080px;
 	overflow:hidden;
 /*	position:fixed;*/
+	background-color:#21ba8f !important;
 }
 
 #character {
