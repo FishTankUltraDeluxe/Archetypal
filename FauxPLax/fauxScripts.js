@@ -12,7 +12,7 @@ var parallaxInstance = new Parallax(scene);
   var boxOffset       = windowHeight - textBoxHeight;
   
 // Force container to bottom and adopt width of screen
-  $("#textContainer").css("marginTop", boxOffset*2);
+  $("#textContainer").css("marginTop", boxOffset*1.9);
   $("#textContainer").css("maxWidth", windowWidth);
   
   console.log("Width of window: " + windowWidth);
