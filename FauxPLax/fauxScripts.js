@@ -34,7 +34,7 @@ function handleOrientation(event) {
 
   // Centering
   box.style.top     = (height*x/tiltAmp - imgH) + "px";
-  box.style.left    = (width*y/tiltAmp - imgV+50) + "px";
+  box.style.left    = (width*y/tiltAmp - imgV) + "px";
   backG.style.top   = (height*x/(tiltAmp*5) - bV) + "px";
   backG.style.left  = (width*y/(tiltAmp*5) - bH) + "px";
 
