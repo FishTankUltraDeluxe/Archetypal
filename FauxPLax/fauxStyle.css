@@ -31,6 +31,7 @@ body {
 }
 
 #character {
+	padding-top:10%;
 	width:auto;
 	height:80%;
 	top:0px;
@@ -48,6 +49,7 @@ body {
     bottom: 0;
     padding: 60px;
     background:#000000c7;
+
 }
 
 #tropeHeader {
