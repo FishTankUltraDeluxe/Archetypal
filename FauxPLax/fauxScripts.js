@@ -14,13 +14,16 @@ var parallaxInstance = new Parallax(scene);
 // Force container to bottom and adopt width of screen
   $("#textContainer").css("marginTop", boxOffset*1.75);
   $("#textContainer").css("maxWidth", windowWidth);
-  
+ 
+  // log to console dimensions  
   console.log("Width of window: " + windowWidth);
   console.log("Height of window: " + windowHeight);
   console.log("Text box height: " + textBoxHeight);
   console.log("Text box is offset by: " + boxOffset);
 
+  // When swiping right, execute "NextCharacter" function
   $(window).on("swiperight", function(){
+    console.log("Swipe!")
     $("#bodyContain").css("background", "#000000")
   });
 

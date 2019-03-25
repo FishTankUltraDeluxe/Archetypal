@@ -9,7 +9,8 @@ body {
 	max-width:1080px;
 	overflow:hidden;
 	font-family:"Maven Pro";
-	background-color:#21ba8f !important;
+/*	background-color:#21ba8f !important;*/
+	touch-action: none;
 }
 
 #vNum {
@@ -30,7 +31,7 @@ body {
 	max-width:1080px;
 	overflow:hidden;
 /*	position:fixed;*/
-	background-color:#21ba8f !important;
+	background-color:#21ba8f;
 }
 
 #character {
@@ -62,15 +63,6 @@ body {
 	filter:drop-shadow(0 5px 5px #000);
 }
 
-/*#background {
-	min-height:100vh;
-	z-index:-100;
-
-	overflow:hidden;
-	top:0px;
-	left:0px;
-}*/
-
-/*#background img {
-	overflow:hidden;
-}*/
+.sortable-handler {
+  touch-action: none;
+}
