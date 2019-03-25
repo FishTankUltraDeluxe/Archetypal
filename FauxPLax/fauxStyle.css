@@ -27,24 +27,24 @@ body {
 	max-height:1920px;
 	max-width:1080px;
 	overflow:hidden;
-	position:fixed;
+/*	position:fixed;*/
 }
 
 #character {
-	position: absolute;
 	width:auto;
 	height:80%;
 	top:0px;
 	left:0px;
-	z-index:400;
+/*	position: absolute;*/
+/*	z-index:400;*/
 	overflow:hidden;
 }
 
 #textContainer {
 /*    position: fixed;*/
-    z-index: 5000;
+/*    z-index: 5000;*/
     background: #fff;
-    max-width: 100%;
+    width: 100%;
     bottom: 0;
     padding: 60px;
     background:#000000c7;

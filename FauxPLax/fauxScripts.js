@@ -1,4 +1,6 @@
-var scene = $('#parallaxContain').get(0);
+// Attempt 2
+
+var scene = $('#bodyContain').get(0);
 var parallaxInstance = new Parallax(scene);
 
 //Attempt 1, commented for storage in case new solution does not work
