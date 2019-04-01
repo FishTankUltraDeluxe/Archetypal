@@ -8,6 +8,7 @@ body {
 	height:100vh;
 	font-family:"Maven Pro";
 	background-color:#21ba8f !important;
+	text-align:left;
 }
 
 #tableScroll {

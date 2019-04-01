@@ -1,23 +1,28 @@
 // Attempt 2
 
-var scene = $('.bodyContain').get(0);
-var parallaxInstance = new Parallax(scene);
+var i;
+
+for (i = 0; i < 13; ++i) {
+  var scene = $('.bodyContain').get(i);
+  var parallaxInstance = new Parallax(scene);
+}
+
 
 //Attempt 1, commented for storage in case new solution does not work
 
 // Get width and height of device window, and height of text container
   var windowWidth     = $(window).width();
   var windowHeight    = $(window).height();
-  var boxOffset       = windowHeight - 420 - 180;
+  // var boxOffset       = windowHeight - 420 - 180;
   
 // Force container to bottom and adopt width of screen
-  $(".textContainer").css("marginTop", boxOffset);
+  // $(".textContainer").css("marginTop", boxOffset);
   $(".textContainer").css("maxWidth", windowWidth);
  
   // log to console dimensions  
   console.log("Width of window: " + windowWidth);
   console.log("Height of window: " + windowHeight);
-  console.log("Text box height: " + textBoxHeight);
+  // console.log("Text box height: " + textBoxHeight);
   console.log("Text box is offset by: " + boxOffset);
 
 
