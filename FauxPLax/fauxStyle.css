@@ -41,6 +41,9 @@ body {
 }
 
 .textContainer {
+	height:420px;
+	max-height:420px;
+	margin-top:0px;
     background: #fff;
     max-width: 100px;
     padding: 60px;
@@ -48,14 +51,14 @@ body {
 }
 
 .tropeHeader {
-	font-size:100px;
+	font-size:60px;
 	color:#fff;
 	filter:drop-shadow(0 5px 5px #000);
 }
 
 .tropeDesc {
-	font-size:60px;
-	font-weight:500;
+	font-size:40px;
+	font-weight:400;
 	color:#fff;
 	filter:drop-shadow(0 5px 5px #000);
 }
