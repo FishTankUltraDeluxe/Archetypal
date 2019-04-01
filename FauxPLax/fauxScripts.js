@@ -1,6 +1,6 @@
 // Attempt 2
 
-var scene = $('#bodyContain').get(0);
+var scene = $('.bodyContain').get(0);
 var parallaxInstance = new Parallax(scene);
 
 //Attempt 1, commented for storage in case new solution does not work
@@ -8,12 +8,12 @@ var parallaxInstance = new Parallax(scene);
 // Get width and height of device window, and height of text container
   var windowWidth     = $(window).width();
   var windowHeight    = $(window).height();
-  var textBoxHeight   = $("#textContainer").height();
+  var textBoxHeight   = $(".textContainer").height();
   var boxOffset       = windowHeight - textBoxHeight;
   
 // Force container to bottom and adopt width of screen
-  $("#textContainer").css("marginTop", boxOffset*1.75);
-  $("#textContainer").css("maxWidth", windowWidth);
+  $(".textContainer").css("marginTop", boxOffset*7.75);
+  $(".textContainer").css("maxWidth", windowWidth);
  
   // log to console dimensions  
   console.log("Width of window: " + windowWidth);
@@ -21,11 +21,16 @@ var parallaxInstance = new Parallax(scene);
   console.log("Text box height: " + textBoxHeight);
   console.log("Text box is offset by: " + boxOffset);
 
+
+  // Old swipe code
+
   // When swiping right, execute "NextCharacter" function
-  $(window).on("swiperight", function(){
-    console.log("Swipe!")
-    $("#bodyContain").css("background", "#000000")
-  });
+  // $(window).on("swiperight", function(){
+  //   console.log("Swipe!")
+  //   $("#bodyContain").css("background", "#000000")
+  // });
+
+  // Old parallax code
 
   // var tiltAmp = 460;
 
