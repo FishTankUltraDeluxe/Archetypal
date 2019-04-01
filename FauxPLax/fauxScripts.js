@@ -8,15 +8,13 @@ for (i = 0; i < 13; ++i) {
 }
 
 
-//Attempt 1, commented for storage in case new solution does not work
-
 // Get width and height of device window, and height of text container
   var windowWidth     = $(window).width();
   var windowHeight    = $(window).height();
-  // var boxOffset       = windowHeight - 420 - 180;
+  var boxOffset       = windowHeight - 420 - 180;
   
 // Force container to bottom and adopt width of screen
-  // $(".textContainer").css("marginTop", boxOffset);
+  $(".textContainer").css("marginTop", boxOffset);
   $(".textContainer").css("maxWidth", windowWidth);
  
   // log to console dimensions  
@@ -26,20 +24,20 @@ for (i = 0; i < 13; ++i) {
   console.log("Text box is offset by: " + boxOffset);
 
 
-  // Old swipe code
+// Old swipe code
 
-  // When swiping right, execute "NextCharacter" function
-  // $(window).on("swiperight", function(){
-  //   console.log("Swipe!")
-  //   $("#bodyContain").css("background", "#000000")
-  // });
+// When swiping right, execute "NextCharacter" function
+// $(window).on("swiperight", function(){
+//   console.log("Swipe!")
+//   $("#bodyContain").css("background", "#000000")
+// });
 
-  // Old parallax code
+// Old parallax code
 
-  // var tiltAmp = 460;
+// var tiltAmp = 460;
 
 
-  // $("#textContainer").css("maxHeight", height)
+// $("#textContainer").css("maxHeight", height)
 
 
 // var backG =   document.querySelector('#bgImage')
