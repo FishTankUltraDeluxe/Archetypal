@@ -11,7 +11,8 @@ for (i = 0; i < 13; ++i) {
   var windowWidth     = $(window).width();
   var windowHeight    = $(window).height();
   var boxOffset       = windowHeight - 420 - 180;
+  var tableWidth      = $("#thisIsTable")
   
-// Force container to bottom and adopt width of screen
   $(".textContainer").css("marginTop", boxOffset);
   $(".textContainer").css("maxWidth", windowWidth);
+  $("#background").css("minWidth", tableWidth + "px")

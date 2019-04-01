@@ -12,11 +12,18 @@ body {
 
 #tableScroll {
 	overflow:scroll;
-	background-color:#21ba8f !important;
+/*	background-color:#21ba8f !important;*/
 }
 
 th {
 	padding:0 50px;
+	border-collapse:collapse;
+	border:none;
+}
+
+#thisIsTable{
+	border-collapse:collapse;
+	border:none !important;
 }
 
 #vNum {
@@ -68,4 +75,31 @@ th {
 	font-weight:400;
 	color:#fff;
 	filter:drop-shadow(0 5px 5px #000);
+}
+
+.type1{
+	background:#21ba8f;
+}
+
+.type1Transition{
+	background-image: linear-gradient(90deg, #21ba8f, #21ba8f, #21ba8f, #9f6492);
+}
+
+.type2 {
+	background: #9f6492;
+}
+
+.type2Transition{
+	background-image: linear-gradient(90deg, #9f6492, #9f6492, #9f6492, #707fad);
+}
+
+.type3 {
+	background: #707fad;
+}
+
+.type3Transition{
+	background-image: linear-gradient(90deg, #707fad, #707fad, #707fad, #861918);
+}
+.type4 {
+	background: #861918;
 }
