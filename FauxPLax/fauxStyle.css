@@ -35,7 +35,7 @@ body {
 
 .bodyContain {
 	margin:0;
-	padding:0;
+	padding:0 50px;
 	max-height:100vh;
 	max-width:1080px;
 /*	overflow:hidden;*/
@@ -48,7 +48,7 @@ body {
 .character {
 	padding-top:10%;
 	width:auto;
-	height:80%;
+	height:100%;
 	overflow:hidden;
 }
 
@@ -57,8 +57,8 @@ body {
 	max-height:420px;
 	margin-top:0px;
     background: #fff;
-    max-width: 1000px;
-    min-width:1000px;
+    max-width: 80%;
+    min-width:80%;
     padding: 60px;
     background:#000000c7;
 }
