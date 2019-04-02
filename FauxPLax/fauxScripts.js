@@ -14,4 +14,5 @@ for (i = 0; i < 13; ++i) {
   var tableWidth      = $("#thisIsTable")
   
   $(".textContainer").css("marginTop", boxOffset);
+  $("body").css("maxHeight", windowHeight);
   // $(".textContainer").css("maxWidth", windowWidth);
