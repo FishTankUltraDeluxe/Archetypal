@@ -32,6 +32,15 @@ body {
 	overflow-x:auto;
 }
 
+.introContain{
+	min-width:90%;
+	min-height:90%;
+	padding:50px;
+	background:#21ba8f;
+	color:#fff;
+	font-weight:500;
+	font-size:35px;
+}
 
 .bodyContain {
 	margin:0;
