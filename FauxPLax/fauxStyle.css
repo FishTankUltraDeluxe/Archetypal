@@ -8,6 +8,7 @@ body {
 	max-height:100vh;
 	font-family:"Maven Pro";
 	text-align:left;
+	overflow-y:hidden;
 }
 
 #vNum {
