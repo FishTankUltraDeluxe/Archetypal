@@ -9,7 +9,7 @@ body {
 	font-family:"Maven Pro";
 	text-align:left;
 	overflow-y:hidden;
-	position:fixed;
+/*	position:fixed;*/
 }
 
 #vNum {
@@ -25,10 +25,6 @@ body {
 }
 
 #tableScroll {
-/*	overflow-x:scroll;
-	overflow-y:hidden;
-	white-space:nowrap;
-	background-color:#21ba8f !important;*/
 	display:flex;
 	flex-wrap:nowrap;
 	overflow-x:auto;
@@ -43,7 +39,7 @@ body {
 	color:#fff;
 	font-weight:500;
 	font-size:35px;
-	flex: 0 0 auto;
+/*	flex: 0 0 auto;*/
 }
 
 .bodyContain {
@@ -51,12 +47,9 @@ body {
 	padding:0 50px;
 	max-height:100vh;
 	max-width:1080px;
-/*	overflow:hidden;*/
-/*	display:inline-block;*/
 	flex: 0 0 auto;
 	display:inline-flex;
 	overflow-y:hidden;
-/*	float:left;*/
 }
 
 .character {
