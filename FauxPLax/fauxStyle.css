@@ -32,6 +32,7 @@ body {
 	flex-wrap:nowrap;
 	overflow-x:auto;
 	overflow-y:hidden;
+	position:fixed;
 }
 
 .introContain{
