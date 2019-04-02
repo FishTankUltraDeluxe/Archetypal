@@ -43,6 +43,7 @@ body {
 	color:#fff;
 	font-weight:500;
 	font-size:35px;
+	flex: 0 0 auto;
 }
 
 .bodyContain {
