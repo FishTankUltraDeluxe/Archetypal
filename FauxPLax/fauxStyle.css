@@ -153,11 +153,13 @@ table{
 .testSubHeader {
 	font-size:50px;
 	font-weight:700;
+	margin-bottom:20px;
 }
 
 .testBody {
 	font-size:40px;
 	font-weight:400;
+	margin-top:0;
 }
 
 #listElements{
