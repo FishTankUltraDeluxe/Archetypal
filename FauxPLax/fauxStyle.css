@@ -78,6 +78,12 @@ body {
 
 }
 
+#charHeightAdjust2 {
+	padding-top:0;
+	margin-bottom:50px;
+
+}
+
 .textContainer {
 	height:355px;
 	margin-top:0px;

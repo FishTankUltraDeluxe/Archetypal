@@ -17,5 +17,6 @@ for (i = 0; i < 13; ++i) {
   
   $(".textContainer").css("marginTop", boxOffset);
   $("body").css("maxHeight", windowHeight);
+  $(".bodyContain").css("maxHeight", windowHeight);
   // $(".textContainer").css("maxWidth", windowWidth);
   console.log($("body").css("maxHeight"))
