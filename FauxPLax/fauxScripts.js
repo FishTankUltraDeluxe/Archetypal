@@ -12,7 +12,7 @@ for (i = 0; i < 13; ++i) {
 // Get width and height of device window, and height of text container
   var windowWidth     = $(window).innerWidth();
   var windowHeight    = $(window).innerHeight();
-  var boxOffset       = windowHeight - 355 - 180;
+  var boxOffset       = windowHeight - 355 - 120;
   var tableWidth      = $("#thisIsTable")
   
   $(".textContainer").css("marginTop", boxOffset);
