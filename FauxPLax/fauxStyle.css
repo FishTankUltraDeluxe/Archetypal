@@ -42,7 +42,6 @@ body {
 	flex-wrap:nowrap;
 	overflow-x:auto;
 	overflow-y:hidden;
-	position:absolute;
 }
 
 .bodyTextContain{
@@ -63,7 +62,7 @@ body {
 	max-width:1080px;
 	flex: 0 0 auto;
 	display:inline-flex;
-	overflow-y:hidden;
+	overflow:hidden;
 }
 
 .character {
@@ -81,6 +80,7 @@ body {
     min-width:80%;
     padding: 60px;
     background:#000000c7;
+    overflow:hidden;
 }
 
 .tropeHeader {
@@ -107,6 +107,7 @@ table{
 	border-collapse:collapse;
 	border-spacing:0;
 	border:none !important;
+	overflow:hidden;
 }
 
 .type1{
