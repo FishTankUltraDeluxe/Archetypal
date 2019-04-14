@@ -9,7 +9,6 @@ body {
 	font-family:"Maven Pro";
 	text-align:left;
 	overflow-y:hidden;
-/*	position:fixed;*/
 }
 
 #vNum {
@@ -43,6 +42,7 @@ body {
 	flex-wrap:nowrap;
 	overflow-x:auto;
 	overflow-y:hidden;
+	position:absolute;
 }
 
 .bodyTextContain{
