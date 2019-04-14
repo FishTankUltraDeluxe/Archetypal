@@ -62,14 +62,18 @@ body {
 	max-width:1080px;
 	flex: 0 0 auto;
 	display:inline-flex;
-	overflow:hidden;
+	overflow-y:hidden;
 }
 
 .character {
 	padding-top:10%;
 	width:auto;
 	height:100%;
-	overflow:hidden;
+/*	overflow:hidden;*/
+}
+
+#charHeightAdjust1 {
+	padding-top:0;
 }
 
 .textContainer {
