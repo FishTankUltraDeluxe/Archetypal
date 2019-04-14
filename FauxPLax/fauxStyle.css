@@ -25,6 +25,19 @@ body {
     opacity:0.4;
 }
 
+#titleHead {
+	font-size: 120px;
+	font-weight: 700;
+	text-align: center;
+	margin-top:55%;
+}
+
+.titleSub {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+
 #tableScroll {
 	display:flex;
 	flex-wrap:nowrap;
@@ -102,24 +115,25 @@ table{
 }
 
 .type1Transition{
-	background-image: linear-gradient(90deg, #21ba8f, #21ba8f, #21ba8f, #9f6492);
+	background-image: linear-gradient(90deg, #21ba8f, #21ba8f, #21ba8f, #21ba8f, #21ba8f, #9f6492);
+}
+
+.type2Transition{
+	background-image: linear-gradient(90deg, #9f6492, #9f6492, #9f6492, #9f6492, #9f6492, #707fad);
+}
+
+.type3Transition{
+	background-image: linear-gradient(90deg, #707fad, #707fad, #707fad, #707fad, #707fad, #707fad, #707fad, #707fad, #861918);
 }
 
 .type2 {
 	background: #9f6492;
 }
 
-.type2Transition{
-	background-image: linear-gradient(90deg, #9f6492, #9f6492, #9f6492, #707fad);
-}
-
 .type3 {
 	background: #707fad;
 }
 
-.type3Transition{
-	background-image: linear-gradient(90deg, #707fad, #707fad, #707fad, #707fad, #861918);
-}
 .type4 {
 	background: #861918;
 }
