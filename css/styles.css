@@ -36,7 +36,7 @@ html, body {
     text-align:left;
 }
 
-body {
+/*body {
     background: linear-gradient(
         to right,
         #21ba8f, #9f6492, #707fad, #861918
@@ -46,14 +46,14 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100%;
-}
+}*/
 
 .bodyContain {
     height:100%;
     margin:0;
 }
 
-/*.type1 { 
+.type1 { 
     background: #21ba8f; 
     margin:0;
 }
@@ -71,7 +71,7 @@ body {
 .type4 { 
     background: #861918; 
     margin:0;
-}*/
+}
 
 .textPadding {
     width:5%;
@@ -87,7 +87,7 @@ body {
     font-size: 2.0em;
     display: inline-block !important;
 
-    height:25%;
+    height:35%;
     position:fixed !important;
     bottom:0;
     top: unset !important;
