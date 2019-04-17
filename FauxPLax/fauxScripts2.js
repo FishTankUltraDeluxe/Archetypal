@@ -1,5 +1,3 @@
-
-
 // Set up parallax for each table element
 var i;
 
