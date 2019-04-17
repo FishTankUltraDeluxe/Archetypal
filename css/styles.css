@@ -1,3 +1,6 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+
 .container {
     display: flex;
     overflow-x: auto;
@@ -29,6 +32,8 @@ html, body {
     margin:0;
     height:100%;
     overflow:hidden;
+    font-family: Maven Pro;
+    text-align:left;
 }
 
 .bodyContain {
@@ -59,14 +64,19 @@ html, body {
 }
 
 .textContainer { 
-    text-align: center; 
     background: #000000ba; 
     color: white; 
-    padding: 20px; 
+    padding: 30px; 
     position: relative; 
-    bottom: 0; 
-    width: 100%;
+    width: 90%;
     height:20%;
     font-size: 2.0em;
-    align-items: flex-end
+    top:unset !important;
+    left:unset !important;
+    bottom: 0;
+    margin: auto;
+}
+
+.tropeHeader, .tropeDesc {
+    padding:0 30px;
 }
