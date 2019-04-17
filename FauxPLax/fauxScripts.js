@@ -11,7 +11,7 @@ for (i = 0; i < 13; ++i) {
 
 // Get width and height of device window, and height of text container
   var windowWidth     = $(window).innerWidth();
-  var windowHeight    = $(window).innerHeight();
+  var windowHeight    = ($(window).innerHeight())-20;
   var boxOffset       = windowHeight - 300 - 120;
   var tableWidth      = $("#thisIsTable")
   
@@ -19,4 +19,4 @@ for (i = 0; i < 13; ++i) {
   $("body").css("maxHeight", windowHeight);
   $(".bodyContain").css("maxHeight", windowHeight);
   // $(".textContainer").css("maxWidth", windowWidth);
-  console.log($("body").css("maxHeight"))
+  console.log($("body").css("maxHeight"));
