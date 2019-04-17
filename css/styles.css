@@ -7,8 +7,8 @@
     height: 100vh;
     /*justify-content: center;*/
     overflow-y: hidden;
-    align-items: center;
-    background: green;
+/*    align-items: center;*/
+    margin:0;
 }
 
 #vNum {
@@ -36,47 +36,71 @@ html, body {
     text-align:left;
 }
 
-.bodyContain {
-    height:100%;
+body {
+    background: linear-gradient(
+        to right,
+        #21ba8f, #9f6492, #707fad, #861918
+        );
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
-.type1 { 
+.bodyContain {
+    height:100%;
+    margin:0;
+}
+
+/*.type1 { 
     background: #21ba8f; 
+    margin:0;
 }
 
 .type2 { 
     background: #9f6492; 
+    margin:0;
 }
 
 .type3 { 
     background: #707fad; 
+    margin:0;
 }
 
 .type4 { 
     background: #861918; 
-}
+    margin:0;
+}*/
 
-.panel { 
-    margin-right: 0px; 
-    height: 100vh; 
-    position: relative; 
-    overflow-wrap: break-word; 
+.textPadding {
+    width:5%;
+    color:#5f8d3e;
+    display:inline-block !important;
 }
 
 .textContainer { 
     background: #000000ba; 
     color: white; 
-    padding: 30px; 
-    position: relative; 
+    padding: 20px;  
     width: 90%;
-    height:20%;
     font-size: 2.0em;
-    top:unset !important;
-    left:unset !important;
-    bottom: 0;
-    margin: auto;
+    display: inline-block !important;
+
+    height:25%;
+    position:fixed !important;
+    bottom:0;
+    top: unset !important;
+    left: unset !important;
 }
 
-.tropeHeader, .tropeDesc {
+.tropeHeader {
     padding:0 30px;
+    font-size:1.8em;
 }
+
+.tropeDesc {
+    padding:0 30px;
+    font-size: 1.3em;
+}
+
