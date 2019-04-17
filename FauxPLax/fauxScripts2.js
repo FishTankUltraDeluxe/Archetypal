@@ -6,7 +6,8 @@ for (i = 0; i < 13; ++i) {
   var parallaxInstance = new Parallax(scene);
 }
 
-
+var bodyWidth = $(".container").width();
+console.log(bodyWidth*13);
 
 // // Get width and height of device window, and height of text container
 //   var windowWidth     = $(window).innerWidth();
