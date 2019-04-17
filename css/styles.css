@@ -39,28 +39,82 @@ html, body {
     text-align:left;
 }
 
-/*body {
-    background: linear-gradient(
-        to right,
-        #21ba8f, #9f6492, #707fad, #861918
-        );
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height:100%;
+#titleBG {
     position:absolute;
-    z-index:-2;
-}*/
+    opacity:0.1;
+    top:0;
+    z-index:-1;
+}
 
 .bodyContain {
     height:100%;
     margin:0;
 }
 
+.bodyTextContain {
+    min-width:100vw;
+    max-width:100vw;
+    height:100vh;
+    color:#fff;
+}
+
+#titleHead {
+    margin-top:50%;
+    margin-bottom:40px;
+    text-align:center;
+    font-size:8em;
+    padding:0 40px 0 40px;
+    text-shadow: 3px 4px 17px #000000a6;
+    font-weight:700;
+}
+
+.titleSub {
+    text-align:center;
+    padding: 0 40px 0 40px;
+    font-size: 2.5em;
+    text-shadow: 0 0 9px #000000f0;
+    font-weight:500;
+}
+
+#introPara {
+    padding: 0 60px 60px 60px;
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.moreInfoHeader {
+    font-weight:700;
+    font-size:5.5em;
+    padding: 0 60px;
+}
+
+.testBody {
+    font-weight:500;
+    font-size:2.5em;
+    padding: 0 60px;
+}
+
+.testSubHeader {
+    font-weight:700;
+    font-size:2.5em;
+    padding: 0 60px;
+}
+
+#listElements {
+    margin-left:65px;
+}
+
+.bTestArrow {
+    font-size:2.5em;
+    padding:0 60px;
+    font-weight: 500;
+}
+
 .type1 { 
     background: #21ba8f; 
     margin:0;
+    z-index:-2;
 }
 
 .type2 { 
@@ -76,6 +130,22 @@ html, body {
 .type4 { 
     background: #861918; 
     margin:0;
+}
+
+.type1Out{
+    background: linear-gradient(to right, #21ba8f 90%, #9f6492);
+}
+
+.type2Out{
+    background: linear-gradient(to right, #9f6492 90%, #707fad);
+}
+
+.type3Out{
+    background: linear-gradient(to right, #707fad 90%, #861918);
+}
+
+.type4In{
+
 }
 
 .textContainer { 
@@ -103,4 +173,3 @@ html, body {
     padding:0 30px;
     font-size: 1.3em;
 }
-
