@@ -42,6 +42,7 @@ body {
 	flex-wrap:nowrap;
 	overflow-x:auto;
 	overflow-y:hidden;
+	height: 100vh;
 }
 
 .bodyTextContain{
@@ -58,7 +59,7 @@ body {
 .bodyContain {
 	margin:0;
 	padding:0 50px;
-	max-height:100px;
+	max-height:100vh;
 	max-width:1080px;
 	flex: 0 0 auto;
 	display:inline-flex;
